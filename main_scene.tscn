@@ -1,0 +1,77 @@
+[gd_scene load_steps=8 format=3 uid="uid://h6ystqekldpe"]
+
+[ext_resource type="Texture2D" uid="uid://bogyuo0dlyy0h" path="res://icon.svg" id="1_q7acs"]
+[ext_resource type="Texture2D" uid="uid://yrlknevndnd4" path="res://BlueWizard/2BlueWizardIdle/Plant Animations/BlueFlower1/BlueFlower_00002.png" id="2_r6oss"]
+[ext_resource type="Texture2D" uid="uid://bgond2fxob10a" path="res://BlueWizard/2BlueWizardIdle/Plant Animations/PlantJump/JumpPlant_00000.png" id="3_5fmwk"]
+[ext_resource type="Texture2D" uid="uid://cypysrh5otme4" path="res://Tree_Transparent_Background-1.png" id="4_aolbq"]
+[ext_resource type="Texture2D" uid="uid://be44dsqv62ih5" path="res://BlueWizard/2BlueWizardIdle/Plant Animations/Plant Wind 1/Plant Wind 1_00000.png" id="5_85hub"]
+[ext_resource type="Texture2D" uid="uid://dipypklkh1e2h" path="res://BlueWizard/2BlueWizardIdle/Chara - BlueIdle00001.png" id="6_gcwcw"]
+[ext_resource type="Texture2D" uid="uid://dw0jg6dhpndpx" path="res://BlueWizard/2BlueWizardIdle/Plant Animations/Plant 1/Plant1_00001.png" id="7_snp4t"]
+
+[node name="Main Scene" type="Node2D"]
+
+[node name="Icon" type="Sprite2D" parent="."]
+visible = false
+modulate = Color(1, 0.415686, 0.835294, 0.937255)
+self_modulate = Color(1, 0.709804, 1, 1)
+position = Vector2(406, 0)
+scale = Vector2(1.78915, 1.60803)
+texture = ExtResource("1_q7acs")
+
+[node name="Forest" type="Node2D" parent="."]
+
+[node name="BlueFlower00002" type="Sprite2D" parent="Forest"]
+position = Vector2(199, 249)
+scale = Vector2(0.264323, 0.264323)
+texture = ExtResource("2_r6oss")
+
+[node name="BlueFlower00002" type="Sprite2D" parent="Forest/BlueFlower00002"]
+position = Vector2(109.714, -34.0494)
+rotation = 0.755909
+scale = Vector2(0.828149, 0.898141)
+texture = ExtResource("2_r6oss")
+
+[node name="JumpPlant00000" type="Sprite2D" parent="Forest"]
+position = Vector2(353, 438)
+scale = Vector2(2.25586, 1.73975)
+texture = ExtResource("3_5fmwk")
+
+[node name="Tree 1" type="Sprite2D" parent="Forest"]
+visible = false
+position = Vector2(693.327, 129.505)
+scale = Vector2(0.135641, 0.104432)
+texture = ExtResource("4_aolbq")
+
+[node name="Tree 2" type="Sprite2D" parent="Forest/Tree 1"]
+visible = false
+position = Vector2(1529.58, 1302.89)
+scale = Vector2(0.940118, 0.826735)
+texture = ExtResource("4_aolbq")
+
+[node name="PlantWind100000" type="Sprite2D" parent="Forest"]
+visible = false
+position = Vector2(929, 356)
+scale = Vector2(0.582031, 0.494141)
+texture = ExtResource("5_85hub")
+
+[node name="Forest Creatures" type="Node2D" parent="."]
+
+[node name="Forest Wizard" type="Sprite2D" parent="Forest Creatures"]
+position = Vector2(544, 545)
+scale = Vector2(0.736328, 0.695312)
+texture = ExtResource("6_gcwcw")
+
+[node name="Plant100001" type="Sprite2D" parent="."]
+position = Vector2(639, 601)
+scale = Vector2(0.240723, 0.240723)
+texture = ExtResource("7_snp4t")
+
+[node name="Plant100001" type="Sprite2D" parent="Plant100001"]
+position = Vector2(-706.206, 29.0792)
+scale = Vector2(0.761334, 0.810017)
+texture = ExtResource("7_snp4t")
+
+[node name="Plant100001" type="Sprite2D" parent="Plant100001/Plant100001"]
+position = Vector2(736.165, -133.765)
+scale = Vector2(1.26067, 1.10198)
+texture = ExtResource("7_snp4t")
