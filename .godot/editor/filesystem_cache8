@@ -1,8 +1,9 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1707770567
+::res://::1707771473
 icon.svg::CompressedTexture2D::3382944458953396425::1707763386::1707763399::1::::<><>::
-main_scene.tscn::PackedScene::556807990814827782::1707770538::0::1::::<><>::uid://bogyuo0dlyy0h::::res://icon.svg<>uid://yrlknevndnd4::::res://BlueWizard/2BlueWizardIdle/Plant Animations/BlueFlower1/BlueFlower_00002.png<>uid://bgond2fxob10a::::res://BlueWizard/2BlueWizardIdle/Plant Animations/PlantJump/JumpPlant_00000.png<>uid://cypysrh5otme4::::res://Tree_Transparent_Background-1.png<>uid://be44dsqv62ih5::::res://BlueWizard/2BlueWizardIdle/Plant Animations/Plant Wind 1/Plant Wind 1_00000.png<>uid://dipypklkh1e2h::::res://BlueWizard/2BlueWizardIdle/Chara - BlueIdle00001.png<>uid://dw0jg6dhpndpx::::res://BlueWizard/2BlueWizardIdle/Plant Animations/Plant 1/Plant1_00001.png
+main_scene.tscn::PackedScene::556807990814827782::1707770583::0::1::::<><>::uid://bogyuo0dlyy0h::::res://icon.svg<>uid://yrlknevndnd4::::res://BlueWizard/2BlueWizardIdle/Plant Animations/BlueFlower1/BlueFlower_00002.png<>uid://bgond2fxob10a::::res://BlueWizard/2BlueWizardIdle/Plant Animations/PlantJump/JumpPlant_00000.png<>uid://cypysrh5otme4::::res://Tree_Transparent_Background-1.png<>uid://be44dsqv62ih5::::res://BlueWizard/2BlueWizardIdle/Plant Animations/Plant Wind 1/Plant Wind 1_00000.png<>uid://dipypklkh1e2h::::res://BlueWizard/2BlueWizardIdle/Chara - BlueIdle00001.png<>uid://dw0jg6dhpndpx::::res://BlueWizard/2BlueWizardIdle/Plant Animations/Plant 1/Plant1_00001.png
 new_script.gd::GDScript::-1::1707768050::0::1::::<>Node<>::
+README.md::TextFile::-1::1707771332::0::1::::<><>::
 Tree_Transparent_Background-1.png::CompressedTexture2D::6489829538219674829::1707769555::1707769557::1::::<><>::
 ::res://BlueWizard/::1707769901
 ::res://BlueWizard/2BlueWizardIdle/::1707770047
@@ -149,7 +150,7 @@ BluePlantClosed_00056.png::CompressedTexture2D::449836235991452502::1707770047::
 BluePlantClosed_00057.png::CompressedTexture2D::3639098761534997847::1707770047::1707770054::1::::<><>::
 BluePlantClosed_00058.png::CompressedTexture2D::2349410200561641527::1707770047::1707770054::1::::<><>::
 BluePlantClosed_00059.png::CompressedTexture2D::696911863711490096::1707770047::1707770054::1::::<><>::
-::res://BlueWizard/2BlueWizardIdle/Plant Animations/Plant 1/::1707770063
+::res://BlueWizard/2BlueWizardIdle/Plant Animations/Plant 1/::1707771678
 Plant1_00000.png::CompressedTexture2D::6150911787598787440::1707770047::1707770054::1::::<><>::
 Plant1_00001.png::CompressedTexture2D::8755584855862713241::1707770047::1707770054::1::::<><>::
 Plant1_00002.png::CompressedTexture2D::5960860091574634460::1707770047::1707770054::1::::<><>::
@@ -240,6 +241,13 @@ Plant1_00086.png::CompressedTexture2D::8426462933894130222::1707770047::17077700
 Plant1_00087.png::CompressedTexture2D::4840780492407939613::1707770047::1707770062::1::::<><>::
 Plant1_00088.png::CompressedTexture2D::5256479598072089739::1707770047::1707770062::1::::<><>::
 Plant1_00089.png::CompressedTexture2D::1987474044148431238::1707770047::1707770062::1::::<><>::
+::res://BlueWizard/2BlueWizardIdle/Plant Animations/Plant 1/Mossy Tileset/::1707771678
+Mossy - BackgroundDecoration.png::CompressedTexture2D::8153765974567754436::1707771678::1707771684::1::::<><>::
+Mossy - Decorations&Hazards.png::CompressedTexture2D::8704267446675733186::1707771678::1707771685::1::::<><>::
+Mossy - FloatingPlatforms.png::CompressedTexture2D::4183451432054247273::1707771678::1707771681::1::::<><>::
+Mossy - Hanging Plants.png::CompressedTexture2D::5681180286467519706::1707771678::1707771682::1::::<><>::
+Mossy - MossyHills.png::CompressedTexture2D::6168426623363142888::1707771678::1707771681::1::::<><>::
+Mossy - TileSet.png::CompressedTexture2D::4891163027187472865::1707771678::1707771683::1::::<><>::
 ::res://BlueWizard/2BlueWizardIdle/Plant Animations/Plant 2/::1707770064
 Plant2_00000.png::CompressedTexture2D::6080495202574973150::1707770047::1707770062::1::::<><>::
 Plant2_00001.png::CompressedTexture2D::4233827182067432042::1707770047::1707770062::1::::<><>::
