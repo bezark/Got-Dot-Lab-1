@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://h6ystqekldpe"]
+[gd_scene load_steps=12 format=3 uid="uid://h6ystqekldpe"]
 
 [ext_resource type="Texture2D" uid="uid://bogyuo0dlyy0h" path="res://icon.svg" id="1_q7acs"]
 [ext_resource type="Texture2D" uid="uid://yrlknevndnd4" path="res://BlueWizard/2BlueWizardIdle/Plant Animations/BlueFlower1/BlueFlower_00002.png" id="2_r6oss"]
@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://dipypklkh1e2h" path="res://BlueWizard/2BlueWizardIdle/Chara - BlueIdle00001.png" id="6_gcwcw"]
 [ext_resource type="Texture2D" uid="uid://ct5bc5tnhd5h1" path="res://BlueWizard/2BlueWizardIdle/Plant Animations/Plant 1/Mossy Tileset/Mossy - MossyHills.png" id="6_pl0cr"]
 [ext_resource type="Texture2D" uid="uid://dw0jg6dhpndpx" path="res://BlueWizard/2BlueWizardIdle/Plant Animations/Plant 1/Plant1_00001.png" id="7_snp4t"]
+[ext_resource type="Script" path="res://Forest Wizard.gd" id="11_1okoo"]
 
 [node name="Main Scene" type="Node2D"]
 
@@ -524,6 +525,8 @@ texture = ExtResource("3_morul")
 position = Vector2(-9209.35, 45.5399)
 scale = Vector2(3.37153, 2.47924)
 texture = ExtResource("6_gcwcw")
+script = ExtResource("11_1okoo")
+booleanVariable = false
 
 [node name="Plant200010" type="Sprite2D" parent="Plant200009/Plant200012/Plant200012/Plant200013/Plant200012/Plant200012"]
 position = Vector2(-374.465, -4.87205)
