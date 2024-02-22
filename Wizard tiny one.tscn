@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://ckcq5smkuhqb"]
+
+[ext_resource type="Texture2D" uid="uid://d1ssbgtutrv7n" path="res://BlueWizard/2BlueWizardJump/CharaWizardJump_00000.png" id="1_r1a1g"]
+
+[node name="CharaWizardJump00000" type="Sprite2D"]
+position = Vector2(494, 375)
+scale = Vector2(1.67969, 1.32031)
+texture = ExtResource("1_r1a1g")

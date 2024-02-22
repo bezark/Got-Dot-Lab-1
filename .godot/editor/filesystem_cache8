@@ -1,11 +1,13 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1708617335
-Forest Wizard.gd::GDScript::-1::1708467929::0::1::::<>Sprite2D<>::
+::res://::1708634658
+Forest Wizard.gd::GDScript::-1::1708634471::0::1::::<>Sprite2D<>::
 icon.svg::CompressedTexture2D::3382944458953396425::1707763386::1707763399::1::::<><>::
-main_scene.tscn::PackedScene::556807990814827782::1708467929::0::1::::<><>::uid://bogyuo0dlyy0h::::res://icon.svg<>uid://yrlknevndnd4::::res://BlueWizard/2BlueWizardIdle/Plant Animations/BlueFlower1/BlueFlower_00002.png<>uid://bgond2fxob10a::::res://BlueWizard/2BlueWizardIdle/Plant Animations/PlantJump/JumpPlant_00000.png<>uid://bkqk4um30nkis::::res://BlueWizard/2BlueWizardIdle/Plant Animations/Plant 2/Plant2_00009.png<>uid://cypysrh5otme4::::res://Tree_Transparent_Background-1.png<>uid://be44dsqv62ih5::::res://BlueWizard/2BlueWizardIdle/Plant Animations/Plant Wind 1/Plant Wind 1_00000.png<>uid://bypc1w3ga8b5v::::res://BlueWizard/2BlueWizardWalk/Chara_BlueWalk00017.png<>uid://dipypklkh1e2h::::res://BlueWizard/2BlueWizardIdle/Chara - BlueIdle00001.png<>uid://ct5bc5tnhd5h1::::res://BlueWizard/2BlueWizardIdle/Plant Animations/Plant 1/Mossy Tileset/Mossy - MossyHills.png<>uid://dw0jg6dhpndpx::::res://BlueWizard/2BlueWizardIdle/Plant Animations/Plant 1/Plant1_00001.png<>res://Forest Wizard.gd
+jump_plant_00001.tscn::PackedScene::3397607201502780531::1708617865::0::1::::<><>::uid://bgond2fxob10a::::res://BlueWizard/2BlueWizardIdle/Plant Animations/PlantJump/JumpPlant_00000.png<>uid://bkqk4um30nkis::::res://BlueWizard/2BlueWizardIdle/Plant Animations/Plant 2/Plant2_00009.png
+main_scene.tscn::PackedScene::556807990814827782::1708617827::0::1::::<><>::uid://bogyuo0dlyy0h::::res://icon.svg<>uid://yrlknevndnd4::::res://BlueWizard/2BlueWizardIdle/Plant Animations/BlueFlower1/BlueFlower_00002.png<>uid://bon3dg56b5w3d::::res://jump_plant_00001.tscn<>uid://bgond2fxob10a::::res://BlueWizard/2BlueWizardIdle/Plant Animations/PlantJump/JumpPlant_00000.png<>uid://bkqk4um30nkis::::res://BlueWizard/2BlueWizardIdle/Plant Animations/Plant 2/Plant2_00009.png<>uid://be44dsqv62ih5::::res://BlueWizard/2BlueWizardIdle/Plant Animations/Plant Wind 1/Plant Wind 1_00000.png<>uid://bypc1w3ga8b5v::::res://BlueWizard/2BlueWizardWalk/Chara_BlueWalk00017.png<>uid://dipypklkh1e2h::::res://BlueWizard/2BlueWizardIdle/Chara - BlueIdle00001.png<>uid://dw0jg6dhpndpx::::res://BlueWizard/2BlueWizardIdle/Plant Animations/Plant 1/Plant1_00001.png<>res://Forest Wizard.gd
 new_script.gd::GDScript::-1::1707768050::0::1::::<>Node<>::
 README.md::TextFile::-1::1707771332::0::1::::<><>::
 Tree_Transparent_Background-1.png::CompressedTexture2D::6489829538219674829::1707769555::1707769557::1::::<><>::
+Wizard tiny one.tscn::PackedScene::161173075571040765::1708634471::0::1::::<><>::uid://d1ssbgtutrv7n::::res://BlueWizard/2BlueWizardJump/CharaWizardJump_00000.png
 ::res://BlueWizard/::1707769901
 ::res://BlueWizard/2BlueWizardIdle/::1707770047
 Chara - BlueIdle00000.png::CompressedTexture2D::7720264385277761312::1707769901::1707769902::1::::<><>::
@@ -839,7 +841,7 @@ BlueWizardDash_00012.png::CompressedTexture2D::8780210688246661299::1707769901::
 BlueWizardDash_00013.png::CompressedTexture2D::6530606104333159379::1707769901::1707769901::1::::<><>::
 BlueWizardDash_00014.png::CompressedTexture2D::8003415118538042203::1707769901::1707769901::1::::<><>::
 BlueWizardDash_00015.png::CompressedTexture2D::9041176716985883368::1707769901::1707769901::1::::<><>::
-::res://BlueWizard/2BlueWizardWalk/::1707769902
+::res://BlueWizard/2BlueWizardWalk/::1708634658
 Chara_BlueWalk00000.png::CompressedTexture2D::3141988440363997235::1707769901::1707769902::1::::<><>::
 Chara_BlueWalk00001.png::CompressedTexture2D::2031661182638483566::1707769901::1707769902::1::::<><>::
 Chara_BlueWalk00002.png::CompressedTexture2D::2215795250353795628::1707769901::1707769902::1::::<><>::
@@ -860,3 +862,4 @@ Chara_BlueWalk00016.png::CompressedTexture2D::9063870641871167313::1707769901::1
 Chara_BlueWalk00017.png::CompressedTexture2D::4102087660985973725::1707769901::1707769902::1::::<><>::
 Chara_BlueWalk00018.png::CompressedTexture2D::5225358128583310355::1707769901::1707769902::1::::<><>::
 Chara_BlueWalk00019.png::CompressedTexture2D::1880711220768464738::1707769901::1707769902::1::::<><>::
+PLANT.tscn::PackedScene::676247442380285852::1708634639::0::1::::<><>::uid://hfdgs8cexiw4::::res://BlueWizard/2BlueWizardIdle/Plant Animations/Plant 2/Plant2_00011.png

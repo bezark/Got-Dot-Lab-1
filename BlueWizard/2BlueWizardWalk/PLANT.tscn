@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://jvtxxigjf8xs"]
+
+[ext_resource type="Texture2D" uid="uid://hfdgs8cexiw4" path="res://BlueWizard/2BlueWizardIdle/Plant Animations/Plant 2/Plant2_00011.png" id="1_hhtfm"]
+
+[node name="Plant200011" type="Sprite2D"]
+position = Vector2(422, 443)
+texture = ExtResource("1_hhtfm")
