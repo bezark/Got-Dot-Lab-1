@@ -1,0 +1,69 @@
+[gd_scene load_steps=3 format=3 uid="uid://bon3dg56b5w3d"]
+
+[ext_resource type="Texture2D" uid="uid://bgond2fxob10a" path="res://BlueWizard/2BlueWizardIdle/Plant Animations/PlantJump/JumpPlant_00000.png" id="1_qnq27"]
+[ext_resource type="Texture2D" uid="uid://bkqk4um30nkis" path="res://BlueWizard/2BlueWizardIdle/Plant Animations/Plant 2/Plant2_00009.png" id="2_n8hju"]
+
+[node name="JumpPlant00001" type="Sprite2D"]
+position = Vector2(-357, 712)
+scale = Vector2(18.2708, 12.6188)
+texture = ExtResource("1_qnq27")
+
+[node name="Plant200012" type="Sprite2D" parent="."]
+position = Vector2(-633.161, 3.05176e-05)
+scale = Vector2(0.968832, 1.01018)
+texture = ExtResource("2_n8hju")
+
+[node name="Plant200009" type="Sprite2D" parent="Plant200012"]
+position = Vector2(-181.536, 103.967)
+scale = Vector2(0.677548, 0.506927)
+texture = ExtResource("2_n8hju")
+
+[node name="Plant200010" type="Sprite2D" parent="Plant200012"]
+position = Vector2(-374.465, -4.87205)
+scale = Vector2(0.781522, 0.678372)
+texture = ExtResource("2_n8hju")
+
+[node name="Plant200009" type="Sprite2D" parent="Plant200012/Plant200010"]
+position = Vector2(-217.707, 45.497)
+scale = Vector2(0.677548, 0.506927)
+texture = ExtResource("2_n8hju")
+
+[node name="Plant200011" type="Sprite2D" parent="Plant200012"]
+position = Vector2(-347.848, 75.0183)
+scale = Vector2(0.732191, 0.66586)
+texture = ExtResource("2_n8hju")
+
+[node name="Plant200009" type="Sprite2D" parent="Plant200012/Plant200011"]
+position = Vector2(-152.428, 86.271)
+scale = Vector2(0.677548, 0.506927)
+texture = ExtResource("2_n8hju")
+
+[node name="Plant200010" type="Sprite2D" parent="Plant200012/Plant200011"]
+position = Vector2(-374.465, -4.87205)
+scale = Vector2(0.781522, 0.678372)
+texture = ExtResource("2_n8hju")
+
+[node name="Plant200009" type="Sprite2D" parent="Plant200012/Plant200011/Plant200010"]
+position = Vector2(-152.428, 86.271)
+scale = Vector2(0.677548, 0.506927)
+texture = ExtResource("2_n8hju")
+
+[node name="Plant200011" type="Sprite2D" parent="Plant200012/Plant200011"]
+position = Vector2(-347.848, 75.0183)
+scale = Vector2(0.732191, 0.66586)
+texture = ExtResource("2_n8hju")
+
+[node name="Plant200009" type="Sprite2D" parent="Plant200012/Plant200011/Plant200011"]
+position = Vector2(-152.428, 86.271)
+scale = Vector2(0.677548, 0.506927)
+texture = ExtResource("2_n8hju")
+
+[node name="Plant200010" type="Sprite2D" parent="Plant200012/Plant200011/Plant200011"]
+position = Vector2(-374.465, -4.87205)
+scale = Vector2(0.781522, 0.678372)
+texture = ExtResource("2_n8hju")
+
+[node name="Plant200009" type="Sprite2D" parent="Plant200012/Plant200011/Plant200011/Plant200010"]
+position = Vector2(-152.428, 86.271)
+scale = Vector2(0.677548, 0.506927)
+texture = ExtResource("2_n8hju")

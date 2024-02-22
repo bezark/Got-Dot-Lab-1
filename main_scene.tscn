@@ -1,18 +1,19 @@
-[gd_scene load_steps=12 format=3 uid="uid://h6ystqekldpe"]
+[gd_scene load_steps=11 format=3 uid="uid://h6ystqekldpe"]
 
 [ext_resource type="Texture2D" uid="uid://bogyuo0dlyy0h" path="res://icon.svg" id="1_q7acs"]
 [ext_resource type="Texture2D" uid="uid://yrlknevndnd4" path="res://BlueWizard/2BlueWizardIdle/Plant Animations/BlueFlower1/BlueFlower_00002.png" id="2_r6oss"]
+[ext_resource type="PackedScene" uid="uid://bon3dg56b5w3d" path="res://jump_plant_00001.tscn" id="2_wnuvg"]
 [ext_resource type="Texture2D" uid="uid://bgond2fxob10a" path="res://BlueWizard/2BlueWizardIdle/Plant Animations/PlantJump/JumpPlant_00000.png" id="3_5fmwk"]
 [ext_resource type="Texture2D" uid="uid://bkqk4um30nkis" path="res://BlueWizard/2BlueWizardIdle/Plant Animations/Plant 2/Plant2_00009.png" id="3_morul"]
-[ext_resource type="Texture2D" uid="uid://cypysrh5otme4" path="res://Tree_Transparent_Background-1.png" id="4_aolbq"]
 [ext_resource type="Texture2D" uid="uid://be44dsqv62ih5" path="res://BlueWizard/2BlueWizardIdle/Plant Animations/Plant Wind 1/Plant Wind 1_00000.png" id="5_85hub"]
 [ext_resource type="Texture2D" uid="uid://bypc1w3ga8b5v" path="res://BlueWizard/2BlueWizardWalk/Chara_BlueWalk00017.png" id="5_cvdar"]
 [ext_resource type="Texture2D" uid="uid://dipypklkh1e2h" path="res://BlueWizard/2BlueWizardIdle/Chara - BlueIdle00001.png" id="6_gcwcw"]
-[ext_resource type="Texture2D" uid="uid://ct5bc5tnhd5h1" path="res://BlueWizard/2BlueWizardIdle/Plant Animations/Plant 1/Mossy Tileset/Mossy - MossyHills.png" id="6_pl0cr"]
 [ext_resource type="Texture2D" uid="uid://dw0jg6dhpndpx" path="res://BlueWizard/2BlueWizardIdle/Plant Animations/Plant 1/Plant1_00001.png" id="7_snp4t"]
 [ext_resource type="Script" path="res://Forest Wizard.gd" id="11_1okoo"]
 
 [node name="Main Scene" type="Node2D"]
+
+[node name="Forest Creatures" type="Node2D" parent="."]
 
 [node name="Icon" type="Sprite2D" parent="."]
 visible = false
@@ -22,538 +23,454 @@ position = Vector2(406, 0)
 scale = Vector2(1.78915, 1.60803)
 texture = ExtResource("1_q7acs")
 
-[node name="Forest" type="Node2D" parent="."]
+[node name="BackGround Plant (sky)" parent="." instance=ExtResource("2_wnuvg")]
+position = Vector2(-516, 619)
 
-[node name="JumpPlant00001" type="Sprite2D" parent="Forest"]
-position = Vector2(-357, 712)
-scale = Vector2(18.2708, 12.6188)
-texture = ExtResource("3_5fmwk")
-
-[node name="Plant200012" type="Sprite2D" parent="Forest/JumpPlant00001"]
-position = Vector2(-633.161, 3.05176e-05)
-scale = Vector2(0.968832, 1.01018)
-texture = ExtResource("3_morul")
-
-[node name="Plant200009" type="Sprite2D" parent="Forest/JumpPlant00001/Plant200012"]
-position = Vector2(-181.536, 103.967)
-scale = Vector2(0.677548, 0.506927)
-texture = ExtResource("3_morul")
-
-[node name="Plant200010" type="Sprite2D" parent="Forest/JumpPlant00001/Plant200012"]
-position = Vector2(-374.465, -4.87205)
-scale = Vector2(0.781522, 0.678372)
-texture = ExtResource("3_morul")
-
-[node name="Plant200009" type="Sprite2D" parent="Forest/JumpPlant00001/Plant200012/Plant200010"]
-position = Vector2(-217.707, 45.497)
-scale = Vector2(0.677548, 0.506927)
-texture = ExtResource("3_morul")
-
-[node name="Plant200011" type="Sprite2D" parent="Forest/JumpPlant00001/Plant200012"]
-position = Vector2(-347.848, 75.0183)
-scale = Vector2(0.732191, 0.66586)
-texture = ExtResource("3_morul")
-
-[node name="Plant200009" type="Sprite2D" parent="Forest/JumpPlant00001/Plant200012/Plant200011"]
-position = Vector2(-152.428, 86.271)
-scale = Vector2(0.677548, 0.506927)
-texture = ExtResource("3_morul")
-
-[node name="Plant200010" type="Sprite2D" parent="Forest/JumpPlant00001/Plant200012/Plant200011"]
-position = Vector2(-374.465, -4.87205)
-scale = Vector2(0.781522, 0.678372)
-texture = ExtResource("3_morul")
-
-[node name="Plant200009" type="Sprite2D" parent="Forest/JumpPlant00001/Plant200012/Plant200011/Plant200010"]
-position = Vector2(-152.428, 86.271)
-scale = Vector2(0.677548, 0.506927)
-texture = ExtResource("3_morul")
-
-[node name="Plant200011" type="Sprite2D" parent="Forest/JumpPlant00001/Plant200012/Plant200011"]
-position = Vector2(-347.848, 75.0183)
-scale = Vector2(0.732191, 0.66586)
-texture = ExtResource("3_morul")
-
-[node name="Plant200009" type="Sprite2D" parent="Forest/JumpPlant00001/Plant200012/Plant200011/Plant200011"]
-position = Vector2(-152.428, 86.271)
-scale = Vector2(0.677548, 0.506927)
-texture = ExtResource("3_morul")
-
-[node name="Plant200010" type="Sprite2D" parent="Forest/JumpPlant00001/Plant200012/Plant200011/Plant200011"]
-position = Vector2(-374.465, -4.87205)
-scale = Vector2(0.781522, 0.678372)
-texture = ExtResource("3_morul")
-
-[node name="Plant200009" type="Sprite2D" parent="Forest/JumpPlant00001/Plant200012/Plant200011/Plant200011/Plant200010"]
-position = Vector2(-152.428, 86.271)
-scale = Vector2(0.677548, 0.506927)
-texture = ExtResource("3_morul")
-
-[node name="BlueFlower00002" type="Sprite2D" parent="Forest"]
+[node name="Neon Flowers" type="Sprite2D" parent="."]
 position = Vector2(155, 250)
 scale = Vector2(0.264323, 0.264323)
 texture = ExtResource("2_r6oss")
 
-[node name="BlueFlower00002" type="Sprite2D" parent="Forest/BlueFlower00002"]
+[node name="BlueFlower00002" type="Sprite2D" parent="Neon Flowers"]
 position = Vector2(109.714, -34.0494)
 rotation = 0.755909
 scale = Vector2(0.828149, 0.898141)
 texture = ExtResource("2_r6oss")
 
-[node name="BlueFlower00003" type="Sprite2D" parent="Forest/BlueFlower00002"]
+[node name="BlueFlower00003" type="Sprite2D" parent="Neon Flowers"]
 position = Vector2(121.064, 22.6995)
 scale = Vector2(0.823786, 0.929287)
 texture = ExtResource("2_r6oss")
 
-[node name="BlueFlower00002" type="Sprite2D" parent="Forest/BlueFlower00002/BlueFlower00003"]
+[node name="BlueFlower00002" type="Sprite2D" parent="Neon Flowers/BlueFlower00003"]
 position = Vector2(109.714, -34.0494)
 rotation = 0.755909
 scale = Vector2(0.828149, 0.898141)
 texture = ExtResource("2_r6oss")
 
-[node name="BlueFlower00004" type="Sprite2D" parent="Forest/BlueFlower00002"]
+[node name="BlueFlower00004" type="Sprite2D" parent="Neon Flowers"]
 position = Vector2(415.725, 48.5111)
 scale = Vector2(0.828712, 0.786429)
 texture = ExtResource("2_r6oss")
 
-[node name="BlueFlower00002" type="Sprite2D" parent="Forest/BlueFlower00002/BlueFlower00004"]
+[node name="BlueFlower00002" type="Sprite2D" parent="Neon Flowers/BlueFlower00004"]
 position = Vector2(109.714, -34.0494)
 rotation = 0.755909
 scale = Vector2(0.828149, 0.898141)
 texture = ExtResource("2_r6oss")
 
-[node name="BlueFlower00003" type="Sprite2D" parent="Forest/BlueFlower00002/BlueFlower00004"]
+[node name="BlueFlower00003" type="Sprite2D" parent="Neon Flowers/BlueFlower00004"]
 position = Vector2(333.783, -66.4959)
 scale = Vector2(0.823786, 0.929287)
 texture = ExtResource("2_r6oss")
 
-[node name="BlueFlower00002" type="Sprite2D" parent="Forest/BlueFlower00002/BlueFlower00004/BlueFlower00003"]
+[node name="BlueFlower00002" type="Sprite2D" parent="Neon Flowers/BlueFlower00004/BlueFlower00003"]
 position = Vector2(227.212, 10.3535)
 rotation = 0.755909
 scale = Vector2(0.907888, 0.991581)
 texture = ExtResource("2_r6oss")
 
-[node name="BlueFlower00005" type="Sprite2D" parent="Forest/BlueFlower00002"]
+[node name="BlueFlower00005" type="Sprite2D" parent="Neon Flowers"]
 position = Vector2(344.276, 45.399)
 rotation = 0.0200225
 scale = Vector2(1.00168, 1.08504)
 texture = ExtResource("2_r6oss")
 
-[node name="BlueFlower00002" type="Sprite2D" parent="Forest/BlueFlower00002/BlueFlower00005"]
+[node name="BlueFlower00002" type="Sprite2D" parent="Neon Flowers/BlueFlower00005"]
 position = Vector2(109.714, -34.0494)
 rotation = 0.755909
 scale = Vector2(0.828149, 0.898141)
 texture = ExtResource("2_r6oss")
 
-[node name="BlueFlower00003" type="Sprite2D" parent="Forest/BlueFlower00002/BlueFlower00005"]
+[node name="BlueFlower00003" type="Sprite2D" parent="Neon Flowers/BlueFlower00005"]
 position = Vector2(121.064, 22.6995)
 scale = Vector2(0.823786, 0.929287)
 texture = ExtResource("2_r6oss")
 
-[node name="BlueFlower00002" type="Sprite2D" parent="Forest/BlueFlower00002/BlueFlower00005/BlueFlower00003"]
+[node name="BlueFlower00002" type="Sprite2D" parent="Neon Flowers/BlueFlower00005/BlueFlower00003"]
 position = Vector2(109.714, -34.0494)
 rotation = 0.755909
 scale = Vector2(0.828149, 0.898141)
 texture = ExtResource("2_r6oss")
 
-[node name="BlueFlower00004" type="Sprite2D" parent="Forest/BlueFlower00002/BlueFlower00005"]
+[node name="BlueFlower00004" type="Sprite2D" parent="Neon Flowers/BlueFlower00005"]
 position = Vector2(371.272, 48.9356)
 scale = Vector2(0.828712, 0.786429)
 texture = ExtResource("2_r6oss")
 
-[node name="BlueFlower00002" type="Sprite2D" parent="Forest/BlueFlower00002/BlueFlower00005/BlueFlower00004"]
+[node name="BlueFlower00002" type="Sprite2D" parent="Neon Flowers/BlueFlower00005/BlueFlower00004"]
 position = Vector2(109.714, -34.0494)
 rotation = 0.755909
 scale = Vector2(0.828149, 0.898141)
 texture = ExtResource("2_r6oss")
 
-[node name="BlueFlower00003" type="Sprite2D" parent="Forest/BlueFlower00002/BlueFlower00005/BlueFlower00004"]
+[node name="BlueFlower00003" type="Sprite2D" parent="Neon Flowers/BlueFlower00005/BlueFlower00004"]
 position = Vector2(333.783, -66.4959)
 scale = Vector2(0.823786, 0.929287)
 texture = ExtResource("2_r6oss")
 
-[node name="CharaBlueWalk00017" type="Sprite2D" parent="Forest/BlueFlower00002/BlueFlower00005/BlueFlower00004/BlueFlower00003"]
+[node name="CharaBlueWalk00017" type="Sprite2D" parent="Neon Flowers/BlueFlower00005/BlueFlower00004/BlueFlower00003"]
 position = Vector2(-673.456, -43.1108)
 rotation = 0.0215818
 scale = Vector2(2.29737, 1.89556)
 skew = 0.00743473
 texture = ExtResource("5_cvdar")
 
-[node name="BlueFlower00002" type="Sprite2D" parent="Forest/BlueFlower00002/BlueFlower00005/BlueFlower00004/BlueFlower00003"]
+[node name="BlueFlower00002" type="Sprite2D" parent="Neon Flowers/BlueFlower00005/BlueFlower00004/BlueFlower00003"]
 position = Vector2(109.714, -34.0494)
 rotation = 0.755909
 scale = Vector2(0.828149, 0.898141)
 texture = ExtResource("2_r6oss")
 
-[node name="JumpPlant00000" type="Sprite2D" parent="Forest"]
+[node name="Hangout Plant" type="Sprite2D" parent="."]
 position = Vector2(305, 429)
 scale = Vector2(2.25586, 1.73975)
 texture = ExtResource("3_5fmwk")
 
-[node name="Tree 1" type="Sprite2D" parent="Forest"]
-visible = false
-position = Vector2(693.327, 129.505)
-scale = Vector2(0.135641, 0.104432)
-texture = ExtResource("6_pl0cr")
-
-[node name="Tree 2" type="Sprite2D" parent="Forest"]
-visible = false
-position = Vector2(900.801, 265.568)
-scale = Vector2(0.127519, 0.0863376)
-texture = ExtResource("4_aolbq")
-
-[node name="PlantWind100000" type="Sprite2D" parent="Forest"]
-visible = false
-position = Vector2(929, 356)
-scale = Vector2(0.582031, 0.494141)
-texture = ExtResource("5_85hub")
-
-[node name="Forest Creatures" type="Node2D" parent="."]
-
-[node name="Plant100001" type="Sprite2D" parent="."]
+[node name="Grass" type="Sprite2D" parent="."]
 position = Vector2(647, 600)
 scale = Vector2(0.240723, 0.240723)
 texture = ExtResource("7_snp4t")
 
-[node name="Plant100001" type="Sprite2D" parent="Plant100001"]
-position = Vector2(-706.206, 29.0792)
-scale = Vector2(0.761334, 0.810017)
-texture = ExtResource("7_snp4t")
-
-[node name="Plant100001" type="Sprite2D" parent="Plant100001/Plant100001"]
-position = Vector2(736.165, -133.765)
-scale = Vector2(1.26067, 1.10198)
-texture = ExtResource("7_snp4t")
-
-[node name="Mossy-MossyHills" type="Sprite2D" parent="."]
-visible = false
-position = Vector2(90, 847)
-scale = Vector2(0.292236, 0.408691)
-texture = ExtResource("6_pl0cr")
-
-[node name="Plant200009" type="Sprite2D" parent="."]
-position = Vector2(411, 599)
-scale = Vector2(0.255859, 0.266602)
+[node name="Plant200009" type="Sprite2D" parent="Grass"]
+position = Vector2(-980.38, -4.15454)
+scale = Vector2(1.06288, 1.10751)
 texture = ExtResource("3_morul")
 
-[node name="Plant200009" type="Sprite2D" parent="Plant200009"]
+[node name="Plant200009" type="Sprite2D" parent="Grass/Plant200009"]
 position = Vector2(-152.428, 86.271)
 scale = Vector2(0.677548, 0.506927)
 texture = ExtResource("3_morul")
 
-[node name="Plant200010" type="Sprite2D" parent="Plant200009"]
+[node name="Plant200010" type="Sprite2D" parent="Grass/Plant200009"]
 position = Vector2(-374.465, -4.87205)
 scale = Vector2(0.781522, 0.678372)
 texture = ExtResource("3_morul")
 
-[node name="Plant200009" type="Sprite2D" parent="Plant200009/Plant200010"]
+[node name="Plant200009" type="Sprite2D" parent="Grass/Plant200009/Plant200010"]
 position = Vector2(-152.428, 86.271)
 scale = Vector2(0.677548, 0.506927)
 texture = ExtResource("3_morul")
 
-[node name="Plant200011" type="Sprite2D" parent="Plant200009"]
+[node name="Plant200011" type="Sprite2D" parent="Grass/Plant200009"]
 position = Vector2(-347.848, 75.0183)
 scale = Vector2(0.732191, 0.66586)
 texture = ExtResource("3_morul")
 
-[node name="Plant200009" type="Sprite2D" parent="Plant200009/Plant200011"]
+[node name="Plant200009" type="Sprite2D" parent="Grass/Plant200009/Plant200011"]
 position = Vector2(-152.428, 86.271)
 scale = Vector2(0.677548, 0.506927)
 texture = ExtResource("3_morul")
 
-[node name="Plant200010" type="Sprite2D" parent="Plant200009/Plant200011"]
+[node name="Plant200010" type="Sprite2D" parent="Grass/Plant200009/Plant200011"]
 position = Vector2(-374.465, -4.87205)
 scale = Vector2(0.781522, 0.678372)
 texture = ExtResource("3_morul")
 
-[node name="Plant200009" type="Sprite2D" parent="Plant200009/Plant200011/Plant200010"]
+[node name="Plant200009" type="Sprite2D" parent="Grass/Plant200009/Plant200011/Plant200010"]
 position = Vector2(-152.428, 86.271)
 scale = Vector2(0.677548, 0.506927)
 texture = ExtResource("3_morul")
 
-[node name="Plant200012" type="Sprite2D" parent="Plant200009"]
+[node name="Plant200012" type="Sprite2D" parent="Grass/Plant200009"]
 position = Vector2(-633.161, 3.05176e-05)
 scale = Vector2(0.968832, 1.01018)
 texture = ExtResource("3_morul")
 
-[node name="Plant200009" type="Sprite2D" parent="Plant200009/Plant200012"]
+[node name="Plant200009" type="Sprite2D" parent="Grass/Plant200009/Plant200012"]
 position = Vector2(-181.536, 103.967)
 scale = Vector2(0.677548, 0.506927)
 texture = ExtResource("3_morul")
 
-[node name="Plant200010" type="Sprite2D" parent="Plant200009/Plant200012"]
+[node name="Plant200010" type="Sprite2D" parent="Grass/Plant200009/Plant200012"]
 position = Vector2(-374.465, -4.87205)
 scale = Vector2(0.781522, 0.678372)
 texture = ExtResource("3_morul")
 
-[node name="Plant200009" type="Sprite2D" parent="Plant200009/Plant200012/Plant200010"]
+[node name="Plant200009" type="Sprite2D" parent="Grass/Plant200009/Plant200012/Plant200010"]
 position = Vector2(-217.707, 45.497)
 scale = Vector2(0.677548, 0.506927)
 texture = ExtResource("3_morul")
 
-[node name="Plant200011" type="Sprite2D" parent="Plant200009/Plant200012"]
+[node name="Plant200011" type="Sprite2D" parent="Grass/Plant200009/Plant200012"]
 position = Vector2(-347.848, 75.0183)
 scale = Vector2(0.732191, 0.66586)
 texture = ExtResource("3_morul")
 
-[node name="Plant200009" type="Sprite2D" parent="Plant200009/Plant200012/Plant200011"]
+[node name="Plant200009" type="Sprite2D" parent="Grass/Plant200009/Plant200012/Plant200011"]
 position = Vector2(-152.428, 86.271)
 scale = Vector2(0.677548, 0.506927)
 texture = ExtResource("3_morul")
 
-[node name="Plant200010" type="Sprite2D" parent="Plant200009/Plant200012/Plant200011"]
+[node name="Plant200010" type="Sprite2D" parent="Grass/Plant200009/Plant200012/Plant200011"]
 position = Vector2(-374.465, -4.87205)
 scale = Vector2(0.781522, 0.678372)
 texture = ExtResource("3_morul")
 
-[node name="Plant200009" type="Sprite2D" parent="Plant200009/Plant200012/Plant200011/Plant200010"]
+[node name="Plant200009" type="Sprite2D" parent="Grass/Plant200009/Plant200012/Plant200011/Plant200010"]
 position = Vector2(-152.428, 86.271)
 scale = Vector2(0.677548, 0.506927)
 texture = ExtResource("3_morul")
 
-[node name="Plant200012" type="Sprite2D" parent="Plant200009/Plant200012"]
+[node name="Plant200012" type="Sprite2D" parent="Grass/Plant200009/Plant200012"]
 position = Vector2(-633.359, 3.05176e-05)
 scale = Vector2(0.968832, 1.01018)
 texture = ExtResource("3_morul")
 
-[node name="Plant200009" type="Sprite2D" parent="Plant200009/Plant200012/Plant200012"]
+[node name="Plant200009" type="Sprite2D" parent="Grass/Plant200009/Plant200012/Plant200012"]
 position = Vector2(-181.536, 103.967)
 scale = Vector2(0.677548, 0.506927)
 texture = ExtResource("3_morul")
 
-[node name="Plant200010" type="Sprite2D" parent="Plant200009/Plant200012/Plant200012"]
+[node name="Plant200010" type="Sprite2D" parent="Grass/Plant200009/Plant200012/Plant200012"]
 position = Vector2(-374.465, -4.87205)
 scale = Vector2(0.781522, 0.678372)
 texture = ExtResource("3_morul")
 
-[node name="Plant200009" type="Sprite2D" parent="Plant200009/Plant200012/Plant200012/Plant200010"]
+[node name="Plant200009" type="Sprite2D" parent="Grass/Plant200009/Plant200012/Plant200012/Plant200010"]
 position = Vector2(-217.707, 45.497)
 scale = Vector2(0.677548, 0.506927)
 texture = ExtResource("3_morul")
 
-[node name="Plant200011" type="Sprite2D" parent="Plant200009/Plant200012/Plant200012"]
+[node name="Plant200011" type="Sprite2D" parent="Grass/Plant200009/Plant200012/Plant200012"]
 position = Vector2(-347.848, 75.0183)
 scale = Vector2(0.732191, 0.66586)
 texture = ExtResource("3_morul")
 
-[node name="Plant200009" type="Sprite2D" parent="Plant200009/Plant200012/Plant200012/Plant200011"]
+[node name="Plant200009" type="Sprite2D" parent="Grass/Plant200009/Plant200012/Plant200012/Plant200011"]
 position = Vector2(-152.428, 86.271)
 scale = Vector2(0.677548, 0.506927)
 texture = ExtResource("3_morul")
 
-[node name="Plant200010" type="Sprite2D" parent="Plant200009/Plant200012/Plant200012/Plant200011"]
+[node name="Plant200010" type="Sprite2D" parent="Grass/Plant200009/Plant200012/Plant200012/Plant200011"]
 position = Vector2(-374.465, -4.87205)
 scale = Vector2(0.781522, 0.678372)
 texture = ExtResource("3_morul")
 
-[node name="Plant200009" type="Sprite2D" parent="Plant200009/Plant200012/Plant200012/Plant200011/Plant200010"]
+[node name="Plant200009" type="Sprite2D" parent="Grass/Plant200009/Plant200012/Plant200012/Plant200011/Plant200010"]
 position = Vector2(-152.428, 86.271)
 scale = Vector2(0.677548, 0.506927)
 texture = ExtResource("3_morul")
 
-[node name="Plant200012" type="Sprite2D" parent="Plant200009/Plant200012/Plant200012"]
+[node name="Plant200012" type="Sprite2D" parent="Grass/Plant200009/Plant200012/Plant200012"]
 position = Vector2(2406.54, -44.1082)
 scale = Vector2(0.968832, 1.01018)
 texture = ExtResource("3_morul")
 
-[node name="Plant200009" type="Sprite2D" parent="Plant200009/Plant200012/Plant200012/Plant200012"]
+[node name="Plant200009" type="Sprite2D" parent="Grass/Plant200009/Plant200012/Plant200012/Plant200012"]
 position = Vector2(-85.9572, 101.882)
 scale = Vector2(0.677548, 0.506927)
 texture = ExtResource("3_morul")
 
-[node name="Plant200010" type="Sprite2D" parent="Plant200009/Plant200012/Plant200012/Plant200012"]
+[node name="Plant200010" type="Sprite2D" parent="Grass/Plant200009/Plant200012/Plant200012/Plant200012"]
 position = Vector2(-374.465, -4.87205)
 scale = Vector2(0.781522, 0.678372)
 texture = ExtResource("3_morul")
 
-[node name="Plant200009" type="Sprite2D" parent="Plant200009/Plant200012/Plant200012/Plant200012/Plant200010"]
+[node name="Plant200009" type="Sprite2D" parent="Grass/Plant200009/Plant200012/Plant200012/Plant200012/Plant200010"]
 position = Vector2(-213.716, 50.0921)
 scale = Vector2(0.677548, 0.506927)
 texture = ExtResource("3_morul")
 
-[node name="Plant200011" type="Sprite2D" parent="Plant200009/Plant200012/Plant200012/Plant200012"]
+[node name="Plant200011" type="Sprite2D" parent="Grass/Plant200009/Plant200012/Plant200012/Plant200012"]
 position = Vector2(-347.848, 75.0183)
 scale = Vector2(0.732191, 0.66586)
 texture = ExtResource("3_morul")
 
-[node name="Plant200009" type="Sprite2D" parent="Plant200009/Plant200012/Plant200012/Plant200012/Plant200011"]
+[node name="Plant200009" type="Sprite2D" parent="Grass/Plant200009/Plant200012/Plant200012/Plant200012/Plant200011"]
 position = Vector2(-152.428, 86.271)
 scale = Vector2(0.677548, 0.506927)
 texture = ExtResource("3_morul")
 
-[node name="Plant200010" type="Sprite2D" parent="Plant200009/Plant200012/Plant200012/Plant200012/Plant200011"]
+[node name="Plant200010" type="Sprite2D" parent="Grass/Plant200009/Plant200012/Plant200012/Plant200012/Plant200011"]
 position = Vector2(-374.465, -4.87205)
 scale = Vector2(0.781522, 0.678372)
 texture = ExtResource("3_morul")
 
-[node name="Plant200009" type="Sprite2D" parent="Plant200009/Plant200012/Plant200012/Plant200012/Plant200011/Plant200010"]
+[node name="Plant200009" type="Sprite2D" parent="Grass/Plant200009/Plant200012/Plant200012/Plant200012/Plant200011/Plant200010"]
 position = Vector2(-152.428, 86.271)
 scale = Vector2(0.677548, 0.506927)
 texture = ExtResource("3_morul")
 
-[node name="Plant200012" type="Sprite2D" parent="Plant200009/Plant200012/Plant200012/Plant200012"]
+[node name="Plant200012" type="Sprite2D" parent="Grass/Plant200009/Plant200012/Plant200012/Plant200012"]
 position = Vector2(8305.97, -9.54395)
 scale = Vector2(0.968832, 1.01018)
 texture = ExtResource("3_morul")
 
-[node name="Plant200009" type="Sprite2D" parent="Plant200009/Plant200012/Plant200012/Plant200012/Plant200012"]
+[node name="Plant200009" type="Sprite2D" parent="Grass/Plant200009/Plant200012/Plant200012/Plant200012/Plant200012"]
 position = Vector2(-8333.62, 92.2926)
 scale = Vector2(0.685347, 0.506927)
 texture = ExtResource("3_morul")
 
-[node name="Plant200010" type="Sprite2D" parent="Plant200009/Plant200012/Plant200012/Plant200012/Plant200012"]
+[node name="Plant200010" type="Sprite2D" parent="Grass/Plant200009/Plant200012/Plant200012/Plant200012/Plant200012"]
 position = Vector2(-374.465, -4.87205)
 scale = Vector2(0.781522, 0.678372)
 texture = ExtResource("3_morul")
 
-[node name="Plant200009" type="Sprite2D" parent="Plant200009/Plant200012/Plant200012/Plant200012/Plant200012/Plant200010"]
+[node name="Plant200009" type="Sprite2D" parent="Grass/Plant200009/Plant200012/Plant200012/Plant200012/Plant200012/Plant200010"]
 position = Vector2(-213.716, 50.0921)
 scale = Vector2(0.677548, 0.506927)
 texture = ExtResource("3_morul")
 
-[node name="Plant200011" type="Sprite2D" parent="Plant200009/Plant200012/Plant200012/Plant200012/Plant200012"]
+[node name="Plant200011" type="Sprite2D" parent="Grass/Plant200009/Plant200012/Plant200012/Plant200012/Plant200012"]
 position = Vector2(-347.848, 75.0183)
 scale = Vector2(0.732191, 0.66586)
 texture = ExtResource("3_morul")
 
-[node name="Plant200009" type="Sprite2D" parent="Plant200009/Plant200012/Plant200012/Plant200012/Plant200012/Plant200011"]
+[node name="Plant200009" type="Sprite2D" parent="Grass/Plant200009/Plant200012/Plant200012/Plant200012/Plant200012/Plant200011"]
 position = Vector2(-152.428, 86.271)
 scale = Vector2(0.677548, 0.506927)
 texture = ExtResource("3_morul")
 
-[node name="Plant200010" type="Sprite2D" parent="Plant200009/Plant200012/Plant200012/Plant200012/Plant200012/Plant200011"]
+[node name="Plant200010" type="Sprite2D" parent="Grass/Plant200009/Plant200012/Plant200012/Plant200012/Plant200012/Plant200011"]
 position = Vector2(-374.465, -4.87205)
 scale = Vector2(0.781522, 0.678372)
 texture = ExtResource("3_morul")
 
-[node name="Plant200009" type="Sprite2D" parent="Plant200009/Plant200012/Plant200012/Plant200012/Plant200012/Plant200011/Plant200010"]
+[node name="Plant200009" type="Sprite2D" parent="Grass/Plant200009/Plant200012/Plant200012/Plant200012/Plant200012/Plant200011/Plant200010"]
 position = Vector2(-152.428, 86.271)
 scale = Vector2(0.677548, 0.506927)
 texture = ExtResource("3_morul")
 
-[node name="Plant200013" type="Sprite2D" parent="Plant200009/Plant200012/Plant200012"]
+[node name="Plant200013" type="Sprite2D" parent="Grass/Plant200009/Plant200012/Plant200012"]
 position = Vector2(-4.16389, -169.081)
 scale = Vector2(0.968832, 1.01018)
 texture = ExtResource("3_morul")
 
-[node name="Plant200009" type="Sprite2D" parent="Plant200009/Plant200012/Plant200012/Plant200013"]
+[node name="Plant200009" type="Sprite2D" parent="Grass/Plant200009/Plant200012/Plant200012/Plant200013"]
 position = Vector2(-181.536, 103.967)
 scale = Vector2(0.677548, 0.506927)
 texture = ExtResource("3_morul")
 
-[node name="Plant200010" type="Sprite2D" parent="Plant200009/Plant200012/Plant200012/Plant200013"]
+[node name="Plant200010" type="Sprite2D" parent="Grass/Plant200009/Plant200012/Plant200012/Plant200013"]
 position = Vector2(-374.465, -4.87205)
 scale = Vector2(0.781522, 0.678372)
 texture = ExtResource("3_morul")
 
-[node name="Plant200009" type="Sprite2D" parent="Plant200009/Plant200012/Plant200012/Plant200013/Plant200010"]
+[node name="Plant200009" type="Sprite2D" parent="Grass/Plant200009/Plant200012/Plant200012/Plant200013/Plant200010"]
 position = Vector2(-217.707, 45.497)
 scale = Vector2(0.677548, 0.506927)
 texture = ExtResource("3_morul")
 
-[node name="Plant200011" type="Sprite2D" parent="Plant200009/Plant200012/Plant200012/Plant200013"]
+[node name="Plant200011" type="Sprite2D" parent="Grass/Plant200009/Plant200012/Plant200012/Plant200013"]
 position = Vector2(-347.848, 75.0183)
 scale = Vector2(0.732191, 0.66586)
 texture = ExtResource("3_morul")
 
-[node name="Plant200009" type="Sprite2D" parent="Plant200009/Plant200012/Plant200012/Plant200013/Plant200011"]
+[node name="Plant200009" type="Sprite2D" parent="Grass/Plant200009/Plant200012/Plant200012/Plant200013/Plant200011"]
 position = Vector2(-152.428, 86.271)
 scale = Vector2(0.677548, 0.506927)
 texture = ExtResource("3_morul")
 
-[node name="Plant200010" type="Sprite2D" parent="Plant200009/Plant200012/Plant200012/Plant200013/Plant200011"]
+[node name="Plant200010" type="Sprite2D" parent="Grass/Plant200009/Plant200012/Plant200012/Plant200013/Plant200011"]
 position = Vector2(-374.465, -4.87205)
 scale = Vector2(0.781522, 0.678372)
 texture = ExtResource("3_morul")
 
-[node name="Plant200009" type="Sprite2D" parent="Plant200009/Plant200012/Plant200012/Plant200013/Plant200011/Plant200010"]
+[node name="Plant200009" type="Sprite2D" parent="Grass/Plant200009/Plant200012/Plant200012/Plant200013/Plant200011/Plant200010"]
 position = Vector2(-152.428, 86.271)
 scale = Vector2(0.677548, 0.506927)
 texture = ExtResource("3_morul")
 
-[node name="Plant200012" type="Sprite2D" parent="Plant200009/Plant200012/Plant200012/Plant200013"]
+[node name="Plant200012" type="Sprite2D" parent="Grass/Plant200009/Plant200012/Plant200012/Plant200013"]
 position = Vector2(2406.54, -44.1082)
 scale = Vector2(0.968832, 1.01018)
 texture = ExtResource("3_morul")
 
-[node name="Plant200009" type="Sprite2D" parent="Plant200009/Plant200012/Plant200012/Plant200013/Plant200012"]
+[node name="Plant200009" type="Sprite2D" parent="Grass/Plant200009/Plant200012/Plant200012/Plant200013/Plant200012"]
 position = Vector2(-85.9572, 101.882)
 scale = Vector2(0.677548, 0.506927)
 texture = ExtResource("3_morul")
 
-[node name="Plant200010" type="Sprite2D" parent="Plant200009/Plant200012/Plant200012/Plant200013/Plant200012"]
+[node name="Plant200010" type="Sprite2D" parent="Grass/Plant200009/Plant200012/Plant200012/Plant200013/Plant200012"]
 position = Vector2(-374.465, -4.87205)
 scale = Vector2(0.781522, 0.678372)
 texture = ExtResource("3_morul")
 
-[node name="Plant200009" type="Sprite2D" parent="Plant200009/Plant200012/Plant200012/Plant200013/Plant200012/Plant200010"]
+[node name="Plant200009" type="Sprite2D" parent="Grass/Plant200009/Plant200012/Plant200012/Plant200013/Plant200012/Plant200010"]
 position = Vector2(-213.716, 50.0921)
 scale = Vector2(0.677548, 0.506927)
 texture = ExtResource("3_morul")
 
-[node name="Plant200011" type="Sprite2D" parent="Plant200009/Plant200012/Plant200012/Plant200013/Plant200012"]
+[node name="Plant200011" type="Sprite2D" parent="Grass/Plant200009/Plant200012/Plant200012/Plant200013/Plant200012"]
 position = Vector2(-347.848, 75.0183)
 scale = Vector2(0.732191, 0.66586)
 texture = ExtResource("3_morul")
 
-[node name="Plant200009" type="Sprite2D" parent="Plant200009/Plant200012/Plant200012/Plant200013/Plant200012/Plant200011"]
+[node name="Plant200009" type="Sprite2D" parent="Grass/Plant200009/Plant200012/Plant200012/Plant200013/Plant200012/Plant200011"]
 position = Vector2(-152.428, 86.271)
 scale = Vector2(0.677548, 0.506927)
 texture = ExtResource("3_morul")
 
-[node name="Plant200010" type="Sprite2D" parent="Plant200009/Plant200012/Plant200012/Plant200013/Plant200012/Plant200011"]
+[node name="Plant200010" type="Sprite2D" parent="Grass/Plant200009/Plant200012/Plant200012/Plant200013/Plant200012/Plant200011"]
 position = Vector2(-374.465, -4.87205)
 scale = Vector2(0.781522, 0.678372)
 texture = ExtResource("3_morul")
 
-[node name="Plant200009" type="Sprite2D" parent="Plant200009/Plant200012/Plant200012/Plant200013/Plant200012/Plant200011/Plant200010"]
+[node name="Plant200009" type="Sprite2D" parent="Grass/Plant200009/Plant200012/Plant200012/Plant200013/Plant200012/Plant200011/Plant200010"]
 position = Vector2(-152.428, 86.271)
 scale = Vector2(0.677548, 0.506927)
 texture = ExtResource("3_morul")
 
-[node name="Plant200012" type="Sprite2D" parent="Plant200009/Plant200012/Plant200012/Plant200013/Plant200012"]
+[node name="Plant200012" type="Sprite2D" parent="Grass/Plant200009/Plant200012/Plant200012/Plant200013/Plant200012"]
 position = Vector2(8305.97, -9.54395)
 scale = Vector2(0.968832, 1.01018)
 texture = ExtResource("3_morul")
 
-[node name="Plant200009" type="Sprite2D" parent="Plant200009/Plant200012/Plant200012/Plant200013/Plant200012/Plant200012"]
+[node name="Plant200009" type="Sprite2D" parent="Grass/Plant200009/Plant200012/Plant200012/Plant200013/Plant200012/Plant200012"]
 position = Vector2(-8333.62, 92.2926)
 scale = Vector2(0.685347, 0.506927)
 texture = ExtResource("3_morul")
 
-[node name="Forest Wizard" type="Sprite2D" parent="Plant200009/Plant200012/Plant200012/Plant200013/Plant200012/Plant200012"]
+[node name="Forest Wizard" type="Sprite2D" parent="Grass/Plant200009/Plant200012/Plant200012/Plant200013/Plant200012/Plant200012"]
 position = Vector2(-9209.35, 45.5399)
 scale = Vector2(3.37153, 2.47924)
 texture = ExtResource("6_gcwcw")
 script = ExtResource("11_1okoo")
 booleanVariable = false
 
-[node name="Plant200010" type="Sprite2D" parent="Plant200009/Plant200012/Plant200012/Plant200013/Plant200012/Plant200012"]
+[node name="Plant200010" type="Sprite2D" parent="Grass/Plant200009/Plant200012/Plant200012/Plant200013/Plant200012/Plant200012"]
 position = Vector2(-374.465, -4.87205)
 scale = Vector2(0.781522, 0.678372)
 texture = ExtResource("3_morul")
 
-[node name="Plant200009" type="Sprite2D" parent="Plant200009/Plant200012/Plant200012/Plant200013/Plant200012/Plant200012/Plant200010"]
+[node name="Plant200009" type="Sprite2D" parent="Grass/Plant200009/Plant200012/Plant200012/Plant200013/Plant200012/Plant200012/Plant200010"]
 position = Vector2(-213.716, 50.0921)
 scale = Vector2(0.677548, 0.506927)
 texture = ExtResource("3_morul")
 
-[node name="Plant200011" type="Sprite2D" parent="Plant200009/Plant200012/Plant200012/Plant200013/Plant200012/Plant200012"]
+[node name="Plant200011" type="Sprite2D" parent="Grass/Plant200009/Plant200012/Plant200012/Plant200013/Plant200012/Plant200012"]
 position = Vector2(-347.848, 75.0183)
 scale = Vector2(0.732191, 0.66586)
 texture = ExtResource("3_morul")
 
-[node name="Plant200009" type="Sprite2D" parent="Plant200009/Plant200012/Plant200012/Plant200013/Plant200012/Plant200012/Plant200011"]
+[node name="Plant200009" type="Sprite2D" parent="Grass/Plant200009/Plant200012/Plant200012/Plant200013/Plant200012/Plant200012/Plant200011"]
 position = Vector2(-152.428, 86.271)
 scale = Vector2(0.677548, 0.506927)
 texture = ExtResource("3_morul")
 
-[node name="Plant200010" type="Sprite2D" parent="Plant200009/Plant200012/Plant200012/Plant200013/Plant200012/Plant200012/Plant200011"]
+[node name="Plant200010" type="Sprite2D" parent="Grass/Plant200009/Plant200012/Plant200012/Plant200013/Plant200012/Plant200012/Plant200011"]
 position = Vector2(-374.465, -4.87205)
 scale = Vector2(0.781522, 0.678372)
 texture = ExtResource("3_morul")
 
-[node name="Plant200009" type="Sprite2D" parent="Plant200009/Plant200012/Plant200012/Plant200013/Plant200012/Plant200012/Plant200011/Plant200010"]
+[node name="Plant200009" type="Sprite2D" parent="Grass/Plant200009/Plant200012/Plant200012/Plant200013/Plant200012/Plant200012/Plant200011/Plant200010"]
 position = Vector2(-152.428, 86.271)
 scale = Vector2(0.677548, 0.506927)
 texture = ExtResource("3_morul")
+
+[node name="PlantWind100000" type="Sprite2D" parent="Grass"]
+visible = false
+position = Vector2(1171.47, -1013.61)
+scale = Vector2(2.41785, 2.05274)
+texture = ExtResource("5_85hub")
+
+[node name="Plant100001" type="Sprite2D" parent="Grass"]
+position = Vector2(-706.206, 29.0792)
+scale = Vector2(0.761334, 0.810017)
+texture = ExtResource("7_snp4t")
+
+[node name="Plant100001" type="Sprite2D" parent="Grass/Plant100001"]
+position = Vector2(736.165, -133.765)
+scale = Vector2(1.26067, 1.10198)
+texture = ExtResource("7_snp4t")
